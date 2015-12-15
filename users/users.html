@@ -1,0 +1,62 @@
+<section id="users" data-aside="mleft" data-transition="slide">
+  <header data-title="Usuarios" class="gray">
+
+    <nav>
+      <button data-view-aside="mleft" data-icon="menu"></button>
+      <button data-article="edituser" data-view-article="mainuser" data-icon="reply" class="on-right">
+    </nav>
+  </header>
+
+
+  <article id="mainuser" class="active scroll list">
+    <div class="subtitle">
+      Lista de usuarios
+    </div>
+
+
+    <ul id="list-users">
+
+    </ul>
+
+
+    <button class="accept margin-top centered" onclick="users.modeEdit()" data-label="Crear usuario">
+    </button>
+
+  </article>  
+
+  <!-- ////////////////// --> 
+
+
+  <article id="edituser" class="list scroll">
+
+
+    <div class="form common-form">
+
+      <label class="margin-fields">Nick *</label>
+      <fieldset class="radius-bottom shadow">
+        <input type="text" id="user-nick"/>
+      </fieldset>
+
+      <label class="margin-fields">Contraseña *</label>
+      <fieldset class="radius-bottom shadow" data-icon="lock"><span class="icon lock"></span>
+        <input id="user-pass" type="password" value="">
+      </fieldset>
+
+      <label class="margin-fields">Rol</label>
+      <fieldset class="select">
+       <select id="user-rol">
+        <option value="0">invitado</option>
+        <option value="1">Gestor</option>
+        <option value="2">Administrador</option>
+      </select>
+    </fieldset>
+
+    <button class="normal margin-top centered" onclick="users.editCompetitions()" data-label="Editar permisos de acceso a competiciones"></button>
+  </div>
+
+  <button class="accept margin-top centered" onclick="users.save()" data-label="Guardar"></button>
+
+</article>  
+
+</section>
+

@@ -1,0 +1,60 @@
+  <aside id="mleft" data-transition="left">
+    <header data-title="Men&uacute"></header>
+    <article id="mcontent" class="active list scroll">
+      <ul>
+        <li id="compSelected" class="competition-selected">Competici&oacuten no seleccionada</li>
+        
+        <div id="hideMenu" style="display:none">
+          <!-- Al cargarse como página principal competitions.html y añadir el framework
+          lungo las secciones sobre la misma página inicial, el data-async debe de tener una referencia vista desde
+          la localización de competitions.html, o sea, "../" -->
+          <li id="groupsMleft" data-icon="columns" onclick="changeSectionFocus('groupsMleft')">
+            Grupos
+          </li>
+
+
+          <li id="competitorsMleft" data-icon="user" onclick="changeSectionFocus('competitorsMleft')">
+            Participantes
+          </li>
+
+          <li id="teamsMleft" data-icon="group" onclick="changeSectionFocus('teamsMleft')">
+            Equipos
+          </li>
+
+          <li id="testsMleft" data-icon="dashboard" onclick="changeSectionFocus('testsMleft')">
+            Pruebas
+          </li>
+
+
+          <li id="recordsMleft" data-icon="book" onclick="changeSectionFocus('recordsMleft')">
+            Registros
+          </li>
+
+          <li id="pdfMleft" data-icon="file-alt" onclick="changeSectionFocus('pdfMleft')">
+            Exportar en PDF
+          </li>          
+
+        </div>
+
+          <li id="usersMleft" data-icon="key" onclick="changeSectionFocus('usersMleft')" name="admin-feature">
+            Usuarios
+          </li>
+        
+          <li id="competitionsMleft" data-icon="trophy" class="active"  onclick="changeSectionFocus('competitionsMleft')">
+            Competiciones
+          </li>
+
+          <li id="iodataMleft" data-icon="table" onclick="changeSectionFocus('iodataMleft')" name="admin-feature">
+            Importar/Exportar datos
+          </li>  
+
+          <li data-icon="remove" onclick="users.signOut()">
+            Cerrar sesión
+          </li> 
+          <li data-icon="signout" onclick="onBackButton()">
+            Salir de la aplicación
+          </li>       
+          
+      </ul>
+    </article>
+  </aside>

@@ -1,0 +1,86 @@
+<section id="competitors" data-aside="mleft" data-transition="slide">
+  <header data-title="Participantes" class="purple">
+
+    <nav>
+        <button data-view-aside="mleft" data-icon="menu"></button>
+        <button data-article="maincompetitor" data-icon="grid" class="on-right"></button>
+        <button data-article="editcompetitor" data-view-article="maincompetitor" data-icon="reply" class="on-right"></button>      
+    </nav>
+  </header>
+
+
+
+  <nav id="competitor-mdown" data-control="menu" class="icons mdownSt">
+      <a onclick="competitors.modeEdit()" data-icon="plus-sign" class="active" name="protected-feature">Crear participante</a>
+      <a data-icon="arrow-down" class="active" onclick="competitors.list('DESC')">Ordenar por apellido desc.</a>
+      <a data-icon="arrow-up" class="active" onclick="competitors.list('ASC')">Ordenar por apellido asc.</a>
+  </nav>
+
+
+  <article id="maincompetitor" class="active scroll list">
+    <div class="subtitle">
+      Lista de participantes
+    </div>
+
+    <ul id="list-competitors">
+    </ul>
+
+    <button class="accept margin-top centered" onclick="competitors.modeEdit()" data-label="Crear participante"  name="protected-feature">
+    </button>
+
+  </article> 
+
+      <!-- ////////////////// --> 
+
+<article id="editcompetitor" class="list scroll">
+    <div class="form common-form">
+
+      <label class="margin-fields">Nombre *</label>
+      <fieldset class="radius-bottom shadow">
+        <input type="text" id="competitor-name"/>
+      </fieldset>
+
+      <label class="margin-fields">Apellidos *</label>
+      <fieldset class="radius-bottom shadow">
+        <input type="text" id="competitor-surname"/>
+      </fieldset>
+
+      <label class="margin-fields">Fecha nacimiento</label>
+        <fieldset class="radius-bottom shadow">
+          <input type="date" id="competitor-birthdate"/>
+        </fieldset>
+
+      <label class="margin-fields">Sexo</label>
+      <fieldset class="select border">
+       <select id="competitor-gender">
+        <option value="m">hombre</option>
+        <option value="w">mujer</option>
+      </select>
+    </fieldset>
+
+     <label class="margin-fields">Dorsal *</label>
+      <fieldset class="radius-bottom shadow">
+        <input type="text" id="competitor-dorsal"/>
+      </fieldset>
+
+    <label class="margin-fields">Grupo *</label>
+    <fieldset class="select">
+     <select id="competitor-selectGroup">
+    </select>
+  </fieldset>
+
+    <label class="margin-fields">Equipo</label>
+    <fieldset class="select">
+     <select id="competitor-selectTeam">
+    </select>
+  </fieldset>
+  
+</div>
+<button class="normal margin-top centered" onclick="competitors.editTests()" data-label="Ver/Asignar pruebas"></button>
+<button class="normal margin-top centered" onclick="competitors.randomTest()" data-label="Asignar prueba aleatoria"></button><br>
+<button class="accept margin-top centered"  onclick="competitors.save()" data-label="Guardar"></button>
+
+</article>  
+
+</section>
+

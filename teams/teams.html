@@ -1,0 +1,61 @@
+<section id="teams" data-aside="mleft" data-transition="slide">
+  <header data-title="Equipos" class="yellow">
+
+    <nav>
+        <button data-view-aside="mleft" data-icon="menu"></button>
+        <button data-article="mainteam" data-icon="grid" class="on-right"></button>
+        <button data-article="editteam" data-view-article="mainteam" data-icon="reply" class="on-right"></button>
+      </nav>
+  </header>
+
+  <nav id="team-mdown" data-control="menu" class="icons mdownSt">
+    <a href="#"  data-view-article="editteam" data-icon="plus-sign" class="active" name="protected-feature">Crear equipo</a>
+  </nav>
+
+
+  <article id="mainteam" class="active scroll list">
+    <div class="subtitle">
+      Lista de equipos
+    </div>
+
+    <ul id="list-teams">
+    </ul>
+
+    <button class="accept margin-top centered" onclick="teams.modeEdit()" data-label="Crear equipo" name="protected-feature">
+    </button>
+
+  </article>  
+
+
+    <!-- ////////////////// -->
+
+<article id="editteam" class="list scroll">
+
+    
+    <div class="form common-form">
+
+      <label class="margin-fields">Nombre *</label>
+      <fieldset class="radius-bottom shadow">
+        <input type="text" id="team-nameTeam"/>
+      </fieldset>
+
+
+    <label class="margin-fields">Grupo *</label>
+    <fieldset class="select">
+     <select id="team-selectGroup">
+
+    </select>
+  </fieldset>
+
+
+  
+</div>
+
+<button class="normal margin-top centered" onclick="teams.editTests()" data-label="Ver/Asignar pruebas"></button>
+<button class="normal margin-top centered" onclick="teams.randomTest()" data-label="Asignar prueba aleatoria"></button><br>
+<button class="accept margin-top centered" onclick="teams.save()" data-label="Guardar"></button>
+
+</article> 
+
+</section>
+

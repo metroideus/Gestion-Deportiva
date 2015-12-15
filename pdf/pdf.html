@@ -1,0 +1,34 @@
+  <section id="pdf" data-aside="mleft" data-transition="slide">
+    <header data-title="Exportar en PDF">
+      <nav>
+        <button data-view-aside="mleft" data-icon="menu"></button>
+      </nav>
+    </header>
+
+
+    <article id="mainpdf" class="active scroll list">
+
+      <br/>
+      <div id="pdf-infoPath" class="div-center"></div>
+      <br/>
+      <button class="accept margin-top centered" onclick="pdf.edit('group')" name="allGroups" data-label="Seleccionar grupos"></button>
+      <br/>
+      <div class="centered div-text-center" onclick="pdf.allGroups()">
+        <label class="anchor">Todos los grupos</label>
+        <span class="icon check-empty" name="allGroups"></span>
+      </div>
+      <br/>
+      <button class="accept margin-top centered" onclick="pdf.edit('test')" name="allTests" data-label="Seleccionar pruebas"></button>
+      <br/>
+      <div class="centered div-text-center" onclick="pdf.allTests()">
+        <label class="anchor">Todas las pruebas</label>
+        <span class="icon check-empty" name="allTests"></span>
+      </div>
+      <br/>
+      <br/>
+      <button class="normal margin-top centered" onclick="pdf.generate()" data-label="Generar PDF"></button>
+    </article> 
+
+
+  </section>
+

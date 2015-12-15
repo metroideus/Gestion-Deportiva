@@ -1,0 +1,310 @@
+
+.index-form {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
+
+}
+
+
+.common-form {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
+
+}
+
+.backgr{
+
+    background-color: #e7e7e7;
+
+}
+
+
+
+.subtitle{
+
+    border-bottom:1px solid #c1c1c1;
+    padding-top: 20px;
+    background-color: #e7e7e7;
+    font-size:small;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.mdownSt{
+    margin-top: 40px;
+}
+
+.competition-selected{
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 20px;
+    text-align: center !important;
+}
+
+
+/**************/
+.button-list{
+    float: right !important;
+    display: inline-block;
+    color: black;
+}
+
+.list-container-text{
+    width:60%;
+}
+
+.list-container-buttons{
+    margin-top: -20px;
+    float: right;
+    width:15%;
+    min-width: 100px;
+    vertical-align: middle;
+}
+
+
+.list-container-buttons-summary{
+    float: right;
+    width:15%;
+    min-width: 70px;
+    vertical-align: middle;
+}
+
+.list-button-summary{
+    float:right !important;
+}
+
+details {
+    word-wrap:break-word;
+}
+
+
+/****************/
+
+
+.centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.margin-fields{
+    margin-top:20px !important;
+}
+
+
+.img-competition{
+    height: 30%;
+    width: 30%;
+}
+
+.name-competition{
+    margin-top: -20px !important;
+    font-size: x-large;
+
+
+}
+
+.element-list{
+
+    margin-left: 5%;
+
+    width: 90%;
+
+}
+
+
+/* header colors*/
+
+.dark{
+    background-color: black;
+      box-shadow: inset 0 -1px #3F3F3F, 0 1px rgba(0,0,0,0.1);
+      
+}
+
+
+.dark .title{
+text-shadow: 0 0.1em #3F3F3F;
+}
+
+.dark nav button span{
+    color: #4C4C4C;
+        text-shadow: 0 0.1em #A3A3A3;
+}
+
+
+.red{
+    background-color: #CB0000;
+      box-shadow: inset 0 -1px #9B0000, 0 1px rgba(0,0,0,0.1);
+      
+}
+
+.red .title{
+text-shadow: 0 0.1em #9B0000;
+}
+
+.red nav button span{
+    color: #FFF;
+        text-shadow: 0 0.1em #9B0000;
+}
+
+
+.purple{
+    background-color: #C00099;
+      box-shadow: inset 0 -1px #88006C, 0 1px rgba(0,0,0,0.1);
+      
+}
+
+.purple .title{
+text-shadow: 0 0.1em #88006C;
+}
+
+.purple nav button span{
+    color: #FFF;
+        text-shadow: 0 0.1em #88006C;
+}
+
+
+.yellow{
+    background-color: #D0C600;
+      box-shadow: inset 0 -1px #9D9500, 0 1px rgba(0,0,0,0.1);
+      
+}
+
+.yellow .title{
+text-shadow: 0 0.1em #9D9500;
+}
+
+.yellow nav button span{
+    color: #FFF;
+        text-shadow: 0 0.1em #9D9500;
+}
+
+.orange{
+    background-color: #F78300;
+      box-shadow: inset 0 -1px #BA6300, 0 1px rgba(0,0,0,0.1);
+      
+}
+
+.orange .title{
+text-shadow: 0 0.1em #BA6300;
+}
+
+.orange nav button span{
+    color: #FFF;
+        text-shadow: 0 0.1em #BA6300;
+}
+
+.gray{
+    background-color: #969696;
+      box-shadow: inset 0 -1px #646464, 0 1px rgba(0,0,0,0.1);
+      
+}
+
+.gray .title{
+text-shadow: 0 0.1em #646464;
+}
+
+.gray nav button span{
+    color: #FFF;
+        text-shadow: 0 0.1em #646464;
+}
+
+.disabled-link{
+    background-color: #6C6C6C !important;
+    font-style: italic;
+}
+
+
+
+
+.img-hand{
+margin-top: 2px;
+margin-right: 8px;
+width:20px;
+height:20px;
+content:url(../img/hand.png);
+
+}
+
+.img-dice{
+margin-top: 2px;
+margin-right: 8px;
+width:20px;
+height:20px;
+content:url(../img/dice.png);
+
+}
+
+li {
+    list-style:none;
+}
+
+.list-align-left {
+    text-align: left;
+    overflow-y:auto;
+}
+
+.item-selected{
+    background-color: #212121;
+    color: #ECECEC;
+    border-radius: 60px 60px 60px 60px;
+    border: 0px solid #000000;
+}
+
+.item-random{
+    background-color: #FF0000;
+    color: #ECECEC;
+    border-radius: 60px 60px 60px 60px;
+    border: 0px solid #000000;
+}
+
+.li-margin-bottom{
+    margin-bottom: 15px;
+}
+
+
+.list-align-center {
+    text-align: center;
+    overflow-y:auto;
+}
+
+.bold-word {
+    font-weight: bold;
+}
+
+.div-center{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.element-hidden{
+    visibility: hidden;
+}
+
+/*Default sweetalert's stylesheet hides all input fields in alerts*/
+.sweet-alert p input {
+   display: block !important;
+}
+
+.div-text-center{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    word-wrap:break-word;
+}
+
+.text-black{
+    color: #000000;
+    font-weight: bold !important;
+}

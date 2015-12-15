@@ -1,0 +1,94 @@
+<section id="records" data-aside="mleft" data-transition="slide">
+  <header data-title="Registros" class="orange">
+    <nav>
+      <button data-view-aside="mleft" data-icon="menu"></button>
+      <button data-article="createrecord" data-view-article="viewrecord" data-icon="reply" class="on-right"></button> 
+      <button data-article="viewrecord" data-view-article="mainrecord" data-icon="reply" class="on-right"></button> 
+      <button data-article="viewrecord" data-icon="grid" class="on-right"></button>
+    </nav>
+  </header>
+
+  <nav id="record-mdown" data-control="menu" class="icons mdownSt">
+      <a onclick="records.modeCreate()" data-icon="plus-sign" class="active" name="protected-feature">Nuevo registro</a>
+      <a data-icon="arrow-down" class="active" onclick="records.viewRecords('surname-desc')">Ordenar por apellido desc.</a>
+      <a data-icon="arrow-up" class="active" onclick="records.viewRecords('surname-asc')">Ordenar por apellido asc.</a>
+      <a data-icon="caret-sort" class="active" onclick="records.viewRecords('mark')">Ordenar por marca</a>
+      <a data-icon="star-empty" class="active" onclick="records.setViewMMP()">Sólo MMP</a>
+  </nav>
+
+  <article id="mainrecord" class="active scroll list">
+    
+    <div class="subtitle">
+      Registros
+    </div>
+
+
+     <div class="form common-form">
+
+        Elige el grupo y prueba para ver y gestionar sus marcas
+    <br/>
+    <label class="margin-fields">Grupo</label>
+    <fieldset class="select">
+     <select id="record-selectGroup">
+    </select>
+  </fieldset>
+
+      <label class="margin-fields">Prueba</label>
+    <fieldset class="select">
+     <select id="record-selectTest">
+
+    </select>
+  </fieldset>
+
+     </div>
+
+    <button class="accept margin-top centered" onclick="records.saveFilter()" data-label="Aceptar">
+    </button>
+
+  </article>
+
+<!-- //// -->
+
+    <article id="viewrecord" class="scroll list">
+    <div name="record-subtitle-info" class="div-text-center text-black"></div>
+    <div class="subtitle" id="record-subtitle">
+    </div>
+
+    <ul id="list-records">
+    </ul>
+
+
+    <button class="accept margin-top centered" onclick="records.modeCreate()" data-label="Crear nuevo registro" name="protected-feature">
+    </button>
+
+  </article>   
+
+<!-- //// -->
+
+<article id="createrecord" class="list scroll">
+  <div name="record-subtitle-info" class="div-text-center text-black"></div>
+  <div class="form common-form">
+
+    <label class="margin-fields" id="record-titleTeamCompetitor"></label>
+    <fieldset class="select">
+     <select id="record-selectTeamCompetitor">
+    </select>
+  </fieldset>
+
+  <label class="margin-fields">Marca *</label>
+  <fieldset class="radius-bottom shadow" id="record-numericMark">
+    <input type="text" name="num" maxlength="10" class="border success"/>
+  </fieldset>
+  <fieldset class="radius-bottom shadow" id="record-timeMark">
+    <input type="text" name="hours" maxlength="2" placeholder="horas" class="border success">
+    <input type="text" name="minutes" maxlength="2" placeholder="minutos" class="border success">
+    <input type="text" name="seconds" maxlength="6" placeholder="segundos" class="border success">
+  </fieldset>
+  <button class="accept margin-top centered" onclick="records.save()" data-label="Guardar"></button>
+</div>
+
+
+</article>  
+
+</section>
+

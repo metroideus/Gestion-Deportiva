@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- files of css -->
+  <link rel="stylesheet" href="js/third-party-lib/lungo/lungo.css"></link>
+  <link rel="stylesheet" href="js/third-party-lib/lungo/lungo.icon.css"></link>
+  <link rel="stylesheet" href="js/third-party-lib/lungo/lungo.theme.css"></link>
+  <link rel="stylesheet" href="css/style.css"></link>
+  <link rel="stylesheet" href="js/third-party-lib/sweetalert/sweetalert.css"></link>
+
+  <!-- files of js -->
+  <script type="text/javascript" src="js/third-party-lib/jsPDF/jspdf.js"></script>
+  <script type="text/javascript" src="js/third-party-lib/jsPDF/jspdf.plugin.autotable.js"></script>
+  <script src="js/third-party-lib/sweetalert/sweetalert.min.js"></script>
+  <script src="js/third-party-lib/zepto/zepto.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+
+  <title>Aplicación para gestión de actividades físicas y deportivas</title>
+</head>
+<body class="backgr">  
+
+  <section id="login" data-transition="slide">
+    <header data-title="Inicio Sesi&oacuten"></header>
+    <article id="main-article" class="active">
+
+        <br/>
+        <br/>
+        <br/>
+      <div class="form index-form">
+
+        <fieldset class="radius-top" data-icon="user"><span class="icon user"></span>
+          <input placeholder="Nombre de usuario" id="login-user" type="text">
+        </fieldset>
+        <fieldset class="radius-bottom shadow" data-icon="lock"><span class="icon lock"></span>
+          <input placeholder="Contraseña" id="login-pass" type="password">
+        </fieldset>
+
+        <button onclick="users.signIn()" class="accept margin-top centered" data-label="Entrar">
+        </button>
+        <!--<a href="competitions/competitions.html" class="button anchor accept margin-top" data-label="Entrar"></a>-->
+
+      </div>
+    </article>
+  </section>
+
+  <!-- more files of js -->
+  <!-- these libraries must to stay at the end -->
+  <script src="js/third-party-lib/quojs/quo.js"></script>
+  <script src="js/third-party-lib/lungo/lungo.js"></script>
+  <script data-main="js/config-app" src="js/third-party-lib/require.js"></script>
+
+</body>
+</html>

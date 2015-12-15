@@ -1,0 +1,62 @@
+  <section id="groups" data-aside="mleft" data-transition="slide">
+    <header data-title="Grupos" class="red">
+
+      <nav>
+        <button data-view-aside="mleft" data-icon="menu"></button>
+        <button data-article="maingroup" data-icon="grid" class="on-right"></button>
+        <button data-article="editgroup" data-view-article="maingroup" data-icon="reply" class="on-right"></button>
+      </nav>
+    </header>
+
+
+
+    <nav id="group-mdown" data-control="menu" class="icons mdownSt">
+      <a href="#" data-view-article="editgroup" data-icon="plus-sign" class="active" name="protected-feature">Crear grupo</a>
+
+    </nav>
+
+
+    <article id="maingroup" class="active scroll list">
+      <div class="subtitle">
+        Lista de grupos
+      </div>
+
+
+      <ul id="list-groups">
+        
+      </ul>
+
+
+      <button class="accept margin-top centered" onclick="groups.modeEdit()" data-label="Crear grupo" name="protected-feature"></button>
+
+    </article> 
+
+
+    <!-- ////////////////// -->
+
+    <article id="editgroup" class="list scroll">
+
+    
+    <div class="form common-form">
+
+      <label class="margin-fields">Nombre *</label>
+      <fieldset class="radius-bottom shadow">
+        <input type="text" id="nameGroup"/>
+      </fieldset>
+
+    <label class="margin-fields">Subgrupo de</label>
+    <fieldset class="select shadow">
+     <select id="selectGroup">
+
+    </select>
+  </fieldset>
+
+  
+</div>
+<button class="accept margin-top centered" onclick="groups.save()" data-label="Guardar"></button>
+
+</article>   
+
+
+  </section>
+

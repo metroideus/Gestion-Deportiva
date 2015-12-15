@@ -1,0 +1,88 @@
+  <section id="competitions" data-aside="mleft" data-transition="slide">
+    <header data-title="Competiciones">
+      <nav>
+        <button data-view-aside="mleft" data-icon="menu"></button>
+        <button data-article="maincompetition" data-icon="grid" class="on-right"></button>
+        <button data-article="editcompetition" data-view-article="maincompetition" data-icon="reply" class="on-right"></button>
+        <button data-article="viewcompetition" data-view-article="maincompetition" data-icon="reply" class="on-right"></button>
+      </nav>
+    </header>
+
+    <nav id="competition-mdown" data-control="menu" class="icons mdownSt">
+      <a onclick="competitions.modeEdit()" data-icon="plus-sign" class="active" name="protected-feature">Crear competici&oacuten</a>
+    </nav>
+
+    <article id="maincompetition" class="active list scroll">
+      <div class="subtitle">
+        Lista de competiciones
+      </div>
+
+      <ul id="list-competitions">
+      </ul>
+
+      <button onclick="competitions.modeEdit()" class="accept margin-top centered" data-label="Crear competici&oacuten" name="protected-feature">
+      </button>
+
+    </article>  
+
+    <!-- ///////////////////// -->
+
+    <article id="editcompetition" class="list scroll">
+
+      <div class="form common-form">
+
+        <label class="margin-fields">Nombre *</label>
+        <fieldset class="radius-bottom shadow">
+
+          <input type="text" id="nameCompetition"/>
+        </fieldset>
+
+
+        <div align="center">
+          <img id="logo" onclick="competitions.getLogo()" src="img/logo.png" class="img-competition margin-fields">
+        </div>
+        <label class="margin-fields">Fecha comienzo</label>
+        <fieldset class="radius-bottom shadow">
+
+          <input type="date" id="initDate"/>
+        </fieldset>
+
+        <label class="margin-fields">Fecha finalizaci&oacuten</label>
+        <fieldset class="radius-bottom shadow">
+          <input type="date" id="endDate"/>
+        </fieldset>
+
+        <label class="margin-fields">Organizador</label>
+        <fieldset class="radius-bottom shadow">
+          <input type="text" id="organizer"/>
+        </fieldset>
+
+        <label class="margin-fields">Ciudad</label>
+        <fieldset class="radius-bottom shadow">
+          <input type="text" id="location"/>
+        </fieldset>
+        
+      </div>
+
+      <button onclick="competitions.save()" class="accept margin-top centered" data-label="Guardar"></button>
+
+    </article>  
+
+    <!-- //////////////////// -->
+
+    <article id="viewcompetition" class="scroll">
+      <div class="empty">
+
+        <span id="viewname" class="name-competition"></span>
+        <div align="center">
+          <img id="viewlogo" src="img/logo.png" class="img-competition">
+        </div>
+        <span class="margin-fields">Fecha comienzo</span>  <strong id="viewstart">-</strong>
+        <span class="margin-fields">Fecha finalizaci&oacuten</span>  <strong id="viewend">-</strong>
+        <span class="margin-fields">Organizador</span>  <strong id="vieworganizer">-</strong>
+        <span class="margin-fields">Ciudad</span>  <strong id="viewlocation">-</strong>
+
+      </div>
+    </article>  
+
+  </section>

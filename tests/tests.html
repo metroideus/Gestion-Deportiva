@@ -1,0 +1,80 @@
+<section id="tests" data-aside="mleft" data-transition="slide">
+  <header data-title="Pruebas" class="dark">
+
+    <nav>
+        <button data-view-aside="mleft" data-icon="menu"></button>
+        <button data-article="maintest" data-icon="grid" class="on-right"></button>
+        <button data-article="edittest" data-view-article="maintest" data-icon="reply" class="on-right"></button>
+      </nav>
+  </header>
+
+
+
+  <nav id="test-mdown" data-control="menu" class="icons mdownSt">
+    <a href="#" data-view-article="edittest" data-icon="plus-sign" class="active" name="protected-feature">Crear prueba</a>
+
+  </nav>
+
+
+  <article id="maintest" class="active scroll list">
+    <div class="subtitle">
+      Lista de pruebas
+    </div>
+
+
+    <ul id="list-tests">
+      
+    </ul>
+
+
+    <button onclick="tests.modeEdit()" class="accept margin-top centered" data-label="Crear prueba" name="protected-feature">
+    </button>
+
+  </article>  
+
+<!-- ////////////////// -->
+
+  <article id="edittest" class="list scroll">
+
+    
+    <div class="form common-form">
+
+      <label class="margin-fields">Nombre *</label>
+      <fieldset class="radius-bottom shadow">
+        <input type="text" id="nameTest"/>
+      </fieldset>
+
+      <label class="margin-fields">Tipo</label>
+      <fieldset class="select">
+       <select id="typeTest">
+        <option selected value="single">Individual</option>
+        <option value="team">Equipo</option>
+      </select>
+    </fieldset>
+
+    <label class="margin-fields">Resultado</label>
+    <fieldset class="select">
+     <select id="resultTest">
+      <option selected value="distance">Distancia</option>
+      <option value="time">Tiempo</option>
+      <option value="numeric">Num&eacuterica</option>
+    </select>
+  </fieldset>
+
+  <label class="margin-fields">¿Cu&aacutel es la mejor marca?</label>
+  <fieldset class="select">
+    <select id="bestMarkTest">
+    <option value="h" selected>La m&aacutes alta</option>
+    <option value="l">La m&aacutes baja</option>
+  </select>
+  </fieldset>
+
+  
+</div>
+<button onclick="tests.save()" class="accept margin-top centered" data-label="Guardar"></button>
+
+</article>  
+
+
+</section>
+
